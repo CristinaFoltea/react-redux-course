@@ -1,8 +1,8 @@
 import React, { PropTypes } from "react";
 import { connect } from "react-redux";
-import * as courseActions from "../actions/courseAction";
+import * as courseActions from "../../actions/courseAction";
 import { bindActionCreators } from "redux";
-import CourseList from "./CourseList"
+import CourseList from "./CourseList";
 
 class CoursePage extends React.Component {
   constructor(props, context) {
@@ -14,7 +14,7 @@ class CoursePage extends React.Component {
     return (
       <div>
         <h1>  Courses Page </h1>
-        <CourseList courses={courses}></CourseList>
+        <CourseList courses={courses} />
       </div>
     );
   }

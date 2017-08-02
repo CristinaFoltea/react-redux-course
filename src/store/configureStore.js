@@ -8,5 +8,5 @@ export default function configureStore(initialState) {
     RootReducer,
     initialState,
     applyMiddleware(thunk, reduxImmutableStateInvariant())
-  )
+  );
 }
